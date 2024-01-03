@@ -9,7 +9,7 @@ AmeyBot = Bot(intents=Intents.all())
 async def sendIP():
     Manager = await AmeyBot.fetch_user(getenv("MANAGER"))
     body = get("http://ifconfig.me")
-    await Manager.send(f"```{str(body.content)}```")
+    await Manager.send(f"Prajyot's Server IP: ```{str(body.content)}```")
 @AmeyBot.event
 async def on_ready():
     print("Running...")

@@ -1,5 +1,5 @@
 const {Client, GatewayIntentBits} = require("discord.js");
-require("dotenv").config();
+require("dotenv").config({path: ".env"});
 var request = require("request");
 _CODE = "```";
 const AmeyaBot = new Client({intents:[GatewayIntentBits.DirectMessages, GatewayIntentBits.DirectMessageReactions, GatewayIntentBits.DirectMessageTyping]});
